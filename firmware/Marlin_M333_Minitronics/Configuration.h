@@ -314,7 +314,7 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 #define INVERT_X_DIR false    //
 #define INVERT_Y_DIR true    // 
 #define INVERT_Z_DIR true     // 
-#define INVERT_E0_DIR false   // EXTRUDER : "false" if placed LEFT / "true" if placed RIGHT
+#define INVERT_E0_DIR true   //
 #define INVERT_E1_DIR false    // 
 #define INVERT_E2_DIR false   // 
 
