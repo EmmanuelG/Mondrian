@@ -9,7 +9,7 @@
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
 #define STRING_VERSION_CONFIG_H __DATE__ " " __TIME__ // build date and time
-#define STRING_CONFIG_H_AUTHOR "(Emmanuel, M332 Minitronics)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(Emmanuel, M333 Minitronics)" // Who made the changes.
 
 // SERIAL_PORT selects which serial port should be used for communication with the host.
 // This allows the connection of wireless adapters (for instance) to non-default port pins.
@@ -133,17 +133,17 @@
 // 52 is 200k thermistor - ATC Semitec 204GT-2 (1k pullup)
 // 55 is 100k thermistor - ATC Semitec 104GT-2 (Used in ParCan) (1k pullup)
 
-#define TEMP_SENSOR_0 0
+#define TEMP_SENSOR_0 7
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
-#define TEMP_SENSOR_BED 0
+#define TEMP_SENSOR_BED 1
 
 // This makes temp sensor 1 a redundant sensor for sensor 0. If the temperatures difference between these sensors is to high the print will be aborted.
 //#define TEMP_SENSOR_1_AS_REDUNDANT 
 #define MAX_REDUNDANT_TEMP_SENSOR_DIFF 10
 
 // Actual temperature must be close to target for this long before M109 returns success
-#define TEMP_RESIDENCY_TIME 10  // (seconds)
+#define TEMP_RESIDENCY_TIME 5  // (seconds)
 #define TEMP_HYSTERESIS 3       // (degC) range of +/- temperatures considered "close" to the target one
 #define TEMP_WINDOW     1       // (degC) Window around target to start the residency timer x degC early.
 
@@ -158,7 +158,7 @@
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
 // You should use MINTEMP for thermistor short/failure protection.
-#define HEATER_0_MAXTEMP 275
+#define HEATER_0_MAXTEMP 350
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define BED_MAXTEMP 150
@@ -292,7 +292,7 @@ const bool Y_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of the endstops.
 
 #define DISABLE_MAX_ENDSTOPS
-#define DISABLE_MIN_ENDSTOPS
+//#define DISABLE_MIN_ENDSTOPS
 
 // Disable max endstops for compatibility with endstop checking routine
 #if defined(COREXY) && !defined(DISABLE_MAX_ENDSTOPS)
@@ -311,10 +311,10 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 #define DISABLE_Z true
 #define DISABLE_E false // For all extruders
 
-#define INVERT_X_DIR false    //
-#define INVERT_Y_DIR true    // 
-#define INVERT_Z_DIR true     // 
-#define INVERT_E0_DIR true   //
+#define INVERT_X_DIR true    //
+#define INVERT_Y_DIR false    // 
+#define INVERT_Z_DIR false     // 
+#define INVERT_E0_DIR false   //
 #define INVERT_E1_DIR false    // 
 #define INVERT_E2_DIR false   // 
 
@@ -327,11 +327,11 @@ const bool Z_ENDSTOPS_INVERTING = false; // set to true to invert the logic of t
 #define min_software_endstops false // If true, axis won't move to coordinates less than HOME_POS.
 #define max_software_endstops true  // If true, axis won't move to coordinates greater than the defined lengths below.
 // Travel limits after homing
-#define X_MAX_POS 200
+#define X_MAX_POS 195
 #define X_MIN_POS 0
 #define Y_MAX_POS 200
 #define Y_MIN_POS 0
-#define Z_MAX_POS 100
+#define Z_MAX_POS 200
 #define Z_MIN_POS 0
 
 #define X_MAX_LENGTH (X_MAX_POS - X_MIN_POS)
