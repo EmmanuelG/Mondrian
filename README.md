@@ -1,4 +1,4 @@
-**Mondrian is a modular cartesian robot**
+**Mondrian is a modular cartesian RepRap**
 
 It can be scaled easily from 20cm to 100cm, simply by changing the lenght of the aluminium profiles
 
