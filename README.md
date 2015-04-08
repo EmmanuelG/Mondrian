@@ -1,13 +1,13 @@
-Master branch is about the Mondrian 2.1
+Master branch is about the Mondrian 2.1 / 2.2
 
 main changes :
 
--transitioning from Minitronics to Smoothieboard electronic
+-transitioning from Minitronics (2.1) to Smoothieboard electronic (2.2)
 
 -new base corner making the machine easier to build and more stable in Z movement
 
-**Mondrian is a modular cartesian RepRap**
+-and many little things
 
-It can be scaled easily from 20cm to 100cm, simply by changing the lenght of the aluminium profiles
+**Mondrian is a modular cartesian RepRap**
 
 For instructions, see the [RepRap wiki](http://reprap.org/wiki/Mondrian) :)
