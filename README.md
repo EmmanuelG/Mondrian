@@ -1,10 +1,10 @@
-Master branch is about the Mondrian 2.1 / 2.2
+Master branch is about the Mondrian 2.2 (Smoothieboard inside)
 
 main changes :
 
--transitioning from Minitronics (2.1) to Smoothieboard electronic (2.2)
+-new electronic board
 
--new base corner making the machine easier to build and more stable in Z movement
+-new back panel, making maintenance and access to electronic easier
 
 -and many little things
 
