@@ -28,17 +28,17 @@
 #define X_MIN_PIN          37
 #define X_MAX_PIN          40 // put to -1 to disable  
 
-#define Y_STEP_PIN         5 
-#define Y_DIR_PIN          17 
-#define Y_ENABLE_PIN       4
-#define Y_MIN_PIN          41
-#define Y_MAX_PIN          38 // put to -1 to disable
+#define Y_STEP_PIN         16 // was 5 
+#define Y_DIR_PIN          11 // was 17
+#define Y_ENABLE_PIN       3 // was 4
+#define Y_MIN_PIN          18 // was 41
+#define Y_MAX_PIN          19 // was 38 - put to -1 to disable
 
-#define Z_STEP_PIN         16 
-#define Z_DIR_PIN          11
-#define Z_ENABLE_PIN       3 
-#define Z_MIN_PIN          18
-#define Z_MAX_PIN          19 // put to -1 to disable
+#define Z_STEP_PIN         5 // was 16 
+#define Z_DIR_PIN          17 // was 11
+#define Z_ENABLE_PIN       4  // was 3
+#define Z_MIN_PIN          41 // was 18
+#define Z_MAX_PIN          38 // was 19 - put to -1 to disable
 
 #define E0_STEP_PIN        28
 #define E0_DIR_PIN         27

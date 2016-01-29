@@ -564,6 +564,67 @@ const short temptable_10[][2] PROGMEM = {
 };
 #endif
 
+#if (THERMISTORHEATER_0 == 111) || (THERMISTORHEATER_1 == 111) || (THERMISTORHEATER_2 == 111) || (THERMISTORBED == 111) 
+// 111 is 100k beta 3950 1% thermistor used in OpenEdge hotend V4 (4.7k pullup)
+
+const short temptable_111[][2] PROGMEM = {
+         {1*OVERSAMPLENR,        938},
+         {24*OVERSAMPLENR,       260},
+         {27*OVERSAMPLENR,       256},
+         {29*OVERSAMPLENR,       250},
+         {30*OVERSAMPLENR,       246},
+         {31*OVERSAMPLENR,       242},
+         {41*OVERSAMPLENR,       231},
+         {51*OVERSAMPLENR,       220},
+         {61*OVERSAMPLENR,       212},
+         {71*OVERSAMPLENR,       204},
+         {81*OVERSAMPLENR,       198},
+         {91*OVERSAMPLENR,       193},
+         {101*OVERSAMPLENR,      188},
+         {111*OVERSAMPLENR,      184},
+         {121*OVERSAMPLENR,      180},
+         {131*OVERSAMPLENR,      177},
+         {141*OVERSAMPLENR,      173},
+         {151*OVERSAMPLENR,      170},
+         {161*OVERSAMPLENR,      167},
+         {171*OVERSAMPLENR,      164},
+         {181*OVERSAMPLENR,      162},
+         {191*OVERSAMPLENR,      159},
+         {201*OVERSAMPLENR,      156},
+         {221*OVERSAMPLENR,      152},
+         {241*OVERSAMPLENR,      148},
+         {261*OVERSAMPLENR,      144},
+         {281*OVERSAMPLENR,      141},
+         {301*OVERSAMPLENR,      138},
+         {331*OVERSAMPLENR,      132},
+         {361*OVERSAMPLENR,      128},
+         {391*OVERSAMPLENR,      125},
+         {421*OVERSAMPLENR,      121},
+         {451*OVERSAMPLENR,      117},
+         {491*OVERSAMPLENR,      111},
+         {531*OVERSAMPLENR,      106},
+         {571*OVERSAMPLENR,      101},
+         {611*OVERSAMPLENR,      96},
+         {641*OVERSAMPLENR,      92},
+         {681*OVERSAMPLENR,      87},
+         {711*OVERSAMPLENR,      83},
+         {751*OVERSAMPLENR,      78},
+         {791*OVERSAMPLENR,      72},
+         {811*OVERSAMPLENR,      69},
+         {831*OVERSAMPLENR,      66},
+         {871*OVERSAMPLENR,      58},
+         {881*OVERSAMPLENR,      56},
+         {901*OVERSAMPLENR,      52},
+         {921*OVERSAMPLENR,      47},
+         {941*OVERSAMPLENR,      42},
+         {971*OVERSAMPLENR,      31},
+         {981*OVERSAMPLENR,      23},
+         {991*OVERSAMPLENR,      17},
+         {1001*OVERSAMPLENR,     9},
+         {1021*OVERSAMPLENR,     -27}
+};
+#endif
+
 #if (THERMISTORHEATER_0 == 11) || (THERMISTORHEATER_1 == 11) || (THERMISTORHEATER_2 == 11) || (THERMISTORHEATER_3 == 11) || (THERMISTORBED == 11) 
 // QU-BD silicone bed QWG-104F-3950 thermistor
 
