@@ -1,8 +1,9 @@
-Master branch is about the Mondrian 3.0
+Master branch is about the Mondrian 3.1
 
-main changes :
+Changes :
 
-- electronic board is now a Megatronics
+- Z sliders and Z plate (with the goal to pass the motor wire through it)
+- X slider (endtop position)
 
 
 **Mondrian is a compact cartesian RepRap**
